@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Custom Payment</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230506180353">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo"><img src="img/header/logo.svg" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="index.html" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="gallery.html" class="menu__link">Gallery</a>
+							</li>
+							<li class="menu__item">
+								<a href="blogs.html" class="menu__link">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a href="story.html" class="menu__link">Our Story</a>
+							</li>
+							<li class="menu__item">
+								<a href="contact.html" class="menu__link">Contact Us</a>
+							</li>
+							<li class="menu__item">
+								<a href="custom-pay.html" class="menu__link menu__link_active">Payment</a>
+							</li>
+						</ul>
+						<span></span>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<a data-da=".menu__body, 600" href="login.html" class="header__button button button_str-white">
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1616 3.33837C7.7209 3.33837 5.74236 5.31691 5.74236 7.75756C5.74236 10.1982 7.7209 12.1768 10.1616 12.1768C12.6022 12.1768 14.5807 10.1982 14.5807 7.75756C14.5807 5.31691 12.6022 3.33837 10.1616 3.33837ZM4.47974 7.75756C4.47974 4.61958 7.02357 2.07574 10.1616 2.07574C13.2995 2.07574 15.8434 4.61958 15.8434 7.75756C15.8434 10.8955 13.2995 13.4394 10.1616 13.4394C7.02357 13.4394 4.47974 10.8955 4.47974 7.75756Z" fill="#00AFF0" />
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1616 13.4388C8.72081 13.4388 7.30543 13.8181 6.05772 14.5385C4.81001 15.2589 3.77394 16.2952 3.05367 17.543C2.87936 17.8449 2.49327 17.9484 2.1913 17.7741C1.88933 17.5998 1.78584 17.2137 1.96014 16.9118C2.79123 15.472 3.98669 14.2763 5.42635 13.4451C6.86602 12.6138 8.49915 12.1761 10.1616 12.1761C11.824 12.1761 13.4571 12.6138 14.8968 13.4451C16.3365 14.2763 17.5319 15.472 18.363 16.9118C18.5373 17.2137 18.4338 17.5998 18.1319 17.7741C17.8299 17.9484 17.4438 17.8449 17.2695 17.543C16.5492 16.2952 15.5132 15.2589 14.2654 14.5385C13.0177 13.8181 11.6024 13.4388 10.1616 13.4388Z" fill="#00AFF0" />
+						</svg>
+						<span>Login</span>
+					</a>
+					<a data-da=".menu__body, 600" href="purchase.html" class="header__button header__button_gs button button_white">Get Started Now</a>
+					<button type="button" class="header__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="payment-page contact-page blogs-page">
+				<div class="payment-page__container contact-page__container blogs-page__container">
+					<h1 class="payment-page__title contact-page__title blogs-page__title">Custom Amount Payments</h1>
+					<div class="payment-page__text contact-page__text blogs-page__text">
+						<p>
+							"Perfect for paying invoices and tips."
+						</p>
+					</div>
+					<div class="payment-page__body contact-page__body">
+						<div class="payment-page__label contact-page__label blogs-page__label">
+							<span>Home > Custom Pay</span>
+						</div>
+						<div class="payment-page__form contact-page__form form payment-form">
+							<form data-dev action="#" method="POST" id="payment-form" class="payment-form__body form__body">
+								<div class="payment-form__items form__items">
+									<div class="payment-form__item form__item">
+										<label for="amount" class="payment-form__label form__label">Pay A Custom Amount</label>
+										<input data-validate data-error="Wrong Amount" data-required="amount" name="amount" id="amount" type="text" class="payment-form__input form__input" placeholder="Enter your amount in USD 0.00$">
+									</div>
+									<div class="payment-form__item form__item">
+										<div class="payment-form__title-item">
+											Is This For An Invoice?
+										</div>
+										<div data-tabs class="payment-form__options options-invoice">
+											<div data-tabs-titles class="options-invoice__items">
+												<div class="options-invoice__item options-item">
+													<label for="invoiceYes" class="options-item__label payment-form__label form__label">Yes</label>
+													<input name="invoice" id="invoiceYes" value="yes" type="radio" class="options-item__input">
+												</div>
+												<div class="options-invoice__item">
+													<label for="invoiceNo" class="options-item__label payment-form__label form__label">No</label>
+													<input name="invoice" id="invoiceNo" value="no" type="radio" class="options-item__input">
+												</div>
+											</div>
+											<div data-tabs-body class="options-invoice__content">
+												<div class="options-invoice__body">
+													<div class="options-invoice__title-item payment-form__title-item">
+														Please enter the invoice number and invoice date period, if you wish, so you can be credited for the invoice.
+													</div>
+													<label for="invoiceNumber" class="options-invoice__label">Invoice Number (Leave blank if you don't know)</label>
+													<input name="invoiceNumber" id="invoiceNumber" type="text" class="options-invoice__input form__input" placeholder="">
+
+													<label for="invoicePeriod" class="options-invoice__label">Invoice Time Period (Example: 3/3/2029-3/7/2029)</label>
+													<input name="invoicePeriod" id="invoicePeriod" type="text" class="options-invoice__input form__input" placeholder="">
+												</div>
+												<div class="options-invoice__body">
+													<div class="options-invoice__title-item payment-form__title-item">
+														Please add any notes about your payment. Who are you, and why are you paying us? Is this a tip? (Please be detailed, so we can take the correct action based on your payment).
+													</div>
+													<textarea data-autoheight name="payDescription" id="payDescription" class="options-invoice__input payment-form__input form__message form__input" placeholder=""></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="payment-form__item form__item">
+										<div class="payment-form__title-item">
+											How Are You Paying?
+										</div>
+										<div class="payment-form__options options-paying">
+											<div class="options-paying__item">
+												<label for="payingCard" class="options-paying__label payment-form__label"> Credit/Debit Card</label>
+												<input name="payType" id="payingCard" value="card" type="radio" class="options-paying__input">
+											</div>
+											<div class="options-paying__item">
+												<label for="payingPaypal" class="options-paying__label payment-form__label">Paypal</label>
+												<input name="payType" id="payingPaypal" value="paypal" type="radio" class="options-paying__input">
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="submit" class="payment-form__button item-purchase__button form__button button">Proceed To Checkout</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__column">
+					<a href="index.html" class="footer__logo">
+						<img src="img/footer/logo.svg" alt="Logo">
+					</a>
+				</div>
+				<div class="footer__column">
+					<div class="footer__label">Platform</div>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="index.html" class="menu-footer__link">Home</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="gallery.html" class="menu-footer__link">Gallery</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="blogs.html" class="menu-footer__link">Blog</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="story.html" class="menu-footer__link">Our Story</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column">
+					<div class="footer__label">Legal</div>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Privacy Policy</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="contact.html" class="menu-footer__link">Contact Us</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="purchase.html" class="menu-footer__link">Membership</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="custom-pay.html" class="menu-footer__link">Custom Payment</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column">
+					<div class="footer__label">Follow Us</div>
+					<div class="footer__social social">
+						<a href="#" class="social__link">
+							<svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M27.4801 7.74549C27.238 7.62038 27.0024 7.48322 26.774 7.33453C26.1099 6.89552 25.5011 6.37823 24.9605 5.7938C23.6081 4.24634 23.103 2.67647 22.9169 1.57733H22.9244C22.769 0.664998 22.8333 0.074707 22.843 0.074707H16.683V23.894C16.683 24.2139 16.683 24.5299 16.6696 24.8423C16.6696 24.8811 16.6658 24.917 16.6636 24.9588C16.6636 24.976 16.6636 24.9939 16.6599 25.0119C16.6599 25.0163 16.6599 25.0208 16.6599 25.0253C16.5949 25.88 16.321 26.7055 15.8621 27.4294C15.4032 28.1533 14.7734 28.7534 14.0282 29.1768C13.2515 29.6186 12.3731 29.8504 11.4795 29.8493C8.6095 29.8493 6.28345 27.509 6.28345 24.6188C6.28345 21.7287 8.6095 19.3884 11.4795 19.3884C12.0228 19.3879 12.5627 19.4734 13.0793 19.6417L13.0867 13.3697C11.5186 13.1671 9.92556 13.2918 8.40803 13.7357C6.8905 14.1796 5.48144 14.9333 4.26974 15.949C3.20801 16.8715 2.31542 17.9722 1.63211 19.2016C1.37209 19.6499 0.391009 21.4514 0.272204 24.3752C0.197484 26.0348 0.695868 27.7541 0.933479 28.4647V28.4796C1.08292 28.8981 1.662 30.326 2.60572 31.5297C3.3667 32.4953 4.26577 33.3435 5.27398 34.047V34.0321L5.28892 34.047C8.27101 36.0735 11.5774 35.9405 11.5774 35.9405C12.1497 35.9173 14.0671 35.9405 16.2444 34.9086C18.6594 33.7646 20.0342 32.0602 20.0342 32.0602C20.9126 31.0419 21.611 29.8813 22.0995 28.6283C22.6569 27.1631 22.843 25.4056 22.843 24.7033V12.0666C22.9177 12.1114 23.913 12.7697 23.913 12.7697C23.913 12.7697 25.3468 13.6887 27.584 14.2873C29.189 14.7132 31.3514 14.8028 31.3514 14.8028V8.68772C30.5937 8.76991 29.0552 8.53081 27.4801 7.74549Z" fill="#00AFF0" />
+							</svg>
+						</a>
+						<a href="#" class="social__link">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M23.6166 0.466309H8.09997C3.80077 0.466309 0.292236 3.97484 0.292236 8.27404V23.8154C0.292236 28.0899 3.80077 31.5984 8.09997 31.5984H23.6413C27.9405 31.5984 31.449 28.0899 31.449 23.7907V8.27404C31.4243 3.97484 27.9158 0.466309 23.6166 0.466309ZM23.5919 12.1285C23.5919 12.3014 23.5919 12.4744 23.5919 12.6474C23.5919 17.836 19.5892 23.8154 12.2509 23.8154C10.0025 23.8154 7.9023 23.173 6.14803 22.0611C6.46924 22.0858 6.76573 22.1105 7.08694 22.1105C8.96475 22.1105 10.6696 21.4928 12.0285 20.4304C10.2743 20.4057 8.8165 19.2691 8.29763 17.7125C8.54471 17.7619 8.79179 17.7866 9.03887 17.7866C9.40949 17.7866 9.78011 17.7372 10.1013 17.6384C8.32234 17.2678 6.9634 15.6864 6.9634 13.7839V13.7345C7.45756 14.031 8.09997 14.204 8.74238 14.2287C7.67993 13.5368 6.9634 12.3261 6.9634 10.9672C6.9634 10.2507 7.16106 9.58356 7.50697 8.99057C9.48362 11.3625 12.3992 12.9191 15.71 13.0921C15.6359 12.7956 15.6112 12.4991 15.6112 12.2026C15.6112 10.0283 17.3902 8.27404 19.5892 8.27404C20.7258 8.27404 21.7635 8.74349 22.5047 9.50944C23.4189 9.33648 24.259 9.01528 25.025 8.54583C24.7285 9.46002 24.086 10.226 23.2707 10.7201C24.086 10.6213 24.852 10.4236 25.5685 10.1024C25.025 10.8931 24.3578 11.5849 23.5919 12.1285Z" fill="#00AFF0" />
+							</svg>
+						</a>
+						<a href="#" class="social__link">
+							<svg width="42" height="30" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M41.119 4.82137C40.6426 3.03014 39.2331 1.61705 37.4398 1.13275C34.1973 0.263672 21.1876 0.263672 21.1876 0.263672C21.1876 0.263672 8.18461 0.263672 4.9355 1.13275C3.14883 1.61042 1.73934 3.0235 1.25627 4.82137C0.389404 8.07213 0.389404 14.8589 0.389404 14.8589C0.389404 14.8589 0.389404 21.6457 1.25627 24.8965C1.73272 26.6877 3.14221 28.1008 4.9355 28.5851C8.18461 29.4542 21.1876 29.4542 21.1876 29.4542C21.1876 29.4542 34.1973 29.4542 37.4398 28.5851C39.2265 28.1074 40.636 26.6944 41.119 24.8965C41.9859 21.6457 41.9859 14.8589 41.9859 14.8589C41.9859 14.8589 41.9859 8.07213 41.119 4.82137Z" fill="#00AFF0" />
+								<path d="M17.032 21.115L27.8381 14.8589L17.032 8.60287V21.115Z" fill="#00AFF0" />
+								<path d="M13.1416 15.0088V11.5132C13.1416 7.17316 16.215 5.3959 19.9757 7.56593L23.0098 9.31373L26.0439 11.0615C29.8046 13.2316 29.8046 16.7861 26.0439 18.9561L23.0098 20.7039L19.9757 22.4517C16.215 24.6217 13.1416 22.8445 13.1416 18.5044V15.0088Z" fill="white" stroke="white" stroke-width="1.47287" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
+						<a href="#" class="social__link">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.4371 31.55C12.1975 31.55 11.6977 31.5276 10.0432 31.4552C8.75297 31.4128 7.47946 31.1505 6.2775 30.6796C5.24892 30.2793 4.31483 29.6695 3.53453 28.8889C2.75423 28.1084 2.14479 27.174 1.74489 26.1453C1.29216 24.939 1.04797 23.6644 1.02278 22.3762C0.92627 20.7251 0.92627 20.184 0.92627 15.9771C0.92627 11.7254 0.948674 11.2291 1.02278 9.58321C1.04853 8.29671 1.29271 7.02394 1.74489 5.81926C2.14433 4.78923 2.75419 3.85383 3.53552 3.07279C4.31685 2.29176 5.25249 1.68225 6.28267 1.28321C7.48673 0.828576 8.75982 0.58375 10.0466 0.559373C11.6925 0.466308 12.2336 0.466309 16.4371 0.466309C20.7112 0.466309 21.2023 0.488713 22.831 0.559373C24.1201 0.583501 25.3989 0.828227 26.6053 1.28321C27.6352 1.68271 28.5706 2.29238 29.3518 3.07336C30.1331 3.85434 30.7431 4.7895 31.143 5.81926C31.6032 7.04289 31.8496 8.33546 31.8686 9.64009C31.9651 11.2911 31.9651 11.8306 31.9651 16.0357C31.9651 20.2409 31.941 20.7924 31.8686 22.4244C31.8428 23.7139 31.5981 24.9896 31.1448 26.197C30.7438 27.2264 30.1333 28.1613 29.3518 28.9422C28.5703 29.7231 27.635 30.3329 26.6053 30.7331C25.3989 31.1846 24.1253 31.4293 22.8379 31.4552C21.192 31.55 20.6526 31.55 16.4371 31.55ZM16.3785 3.19449C12.163 3.19449 11.7252 3.21517 10.0794 3.28927C9.09641 3.30213 8.12294 3.48341 7.20125 3.82526C6.529 4.08294 5.9182 4.47863 5.40823 4.98681C4.89826 5.495 4.50044 6.10441 4.24041 6.77576C3.89573 7.70641 3.71477 8.69048 3.70443 9.68317C3.61308 11.3532 3.61308 11.7909 3.61308 15.9771C3.61308 20.1133 3.6286 20.6148 3.70443 22.2745C3.71994 23.2568 3.9009 24.2306 4.24041 25.1526C4.76778 26.5089 5.84319 27.5809 7.20297 28.1014C8.12347 28.4454 9.09675 28.6267 10.0794 28.6374C11.7476 28.7339 12.1871 28.7339 16.3785 28.7339C20.606 28.7339 21.0438 28.7132 22.6759 28.6374C23.6589 28.6255 24.6325 28.4442 25.554 28.1014C26.2226 27.8417 26.83 27.4458 27.3373 26.9387C27.8447 26.4317 28.241 25.8246 28.501 25.1561C28.8457 24.2254 29.0267 23.2396 29.037 22.2469H29.056C29.1301 20.5993 29.1301 20.1599 29.1301 15.9495C29.1301 11.7392 29.1111 11.2963 29.037 9.65043C29.0214 8.66887 28.8402 7.69698 28.501 6.77576C28.2416 6.10629 27.8456 5.49819 27.3382 4.99021C26.8308 4.48222 26.2231 4.08548 25.554 3.82526C24.6327 3.48175 23.659 3.30041 22.6759 3.28927C21.0093 3.19449 20.5733 3.19449 16.3785 3.19449ZM16.4371 23.9376C14.8611 23.9386 13.3203 23.4723 12.0094 22.5975C10.6985 21.7227 9.67653 20.4788 9.07265 19.0232C8.46877 17.5675 8.31015 15.9655 8.61685 14.4197C8.92355 12.8738 9.68179 11.4537 10.7957 10.3389C11.9096 9.22402 13.329 8.46455 14.8746 8.15652C16.4201 7.84848 18.0223 8.00571 19.4785 8.60833C20.9347 9.21094 22.1794 10.2319 23.0553 11.542C23.9312 12.8521 24.3989 14.3925 24.3993 15.9685C24.3966 18.08 23.557 20.1043 22.0646 21.5981C20.5722 23.0918 18.5486 23.933 16.4371 23.9376ZM16.4371 10.7948C15.4145 10.7948 14.4149 11.098 13.5646 11.6661C12.7144 12.2342 12.0517 13.0417 11.6604 13.9865C11.269 14.9312 11.1667 15.9708 11.3661 16.9737C11.5656 17.9767 12.0581 18.8979 12.7811 19.621C13.5042 20.3441 14.4255 20.8365 15.4284 21.036C16.4313 21.2355 17.4709 21.1331 18.4156 20.7418C19.3604 20.3504 20.1679 19.6877 20.736 18.8375C21.3041 17.9872 21.6073 16.9876 21.6073 15.965C21.6042 14.5948 21.0584 13.2816 20.0895 12.3126C19.1206 11.3437 17.8073 10.798 16.4371 10.7948ZM24.7095 9.56598C24.4655 9.56507 24.2241 9.51612 23.9991 9.42192C23.774 9.32772 23.5697 9.19011 23.3978 9.01695C23.0507 8.66725 22.8567 8.19397 22.8585 7.70124C22.8604 7.2085 23.0579 6.73668 23.4076 6.38956C23.7573 6.04244 24.2306 5.84845 24.7233 5.85028C25.216 5.85211 25.6878 6.0496 26.035 6.39931C26.3821 6.74901 26.5761 7.22229 26.5742 7.71502C26.5724 8.20776 26.3749 8.67958 26.0252 9.0267C25.6755 9.37382 25.2022 9.56781 24.7095 9.56598Z" fill="#00AFF0" />
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__langs langs">
+						<ul class="langs__list">
+							<li class="langs__item">
+								<a title="English" href="#" class="langs__link"><span>en</span><picture><source srcset="img/sidebar/en.webp" type="image/webp"><img src="img/sidebar/en.png" alt="Flag England"></picture></a>
+							</li>
+							<li class="langs__item">
+								<a title="Español" href="#" class="langs__link"><span>es</span><picture><source srcset="img/sidebar/es.webp" type="image/webp"><img src="img/sidebar/es.png" alt="Flag Espanol"></picture></a>
+							</li>
+							<li class="langs__item">
+								<a title="Korean" href="#" class="langs__link"><span>kor</span><picture><source srcset="img/sidebar/kor.webp" type="image/webp"><img src="img/sidebar/kor.png" alt="Flag Korea"></picture></a>
+							</li>
+							<li class="langs__item">
+								<a title="Français" href="#" class="langs__link"><span>fr</span><picture><source srcset="img/sidebar/fr.webp" type="image/webp"><img src="img/sidebar/fr.png" alt="Flag France"></picture></a>
+							</li>
+							<li class="langs__item">
+								<a title="Portugese" href="#" class="langs__link"><span>pt</span><picture><source srcset="img/sidebar/pt.webp" type="image/webp"><img src="img/sidebar/pt.png" alt="Flag Portugese"></picture></a>
+							</li>
+							<li class="langs__item">
+								<a title="Portugese for Brazilian" href="#" class="langs__link"><span>pt</span><picture><source srcset="img/sidebar/br.webp" type="image/webp"><img src="img/sidebar/br.png" alt="Flag Brazilian"></picture></a>
+							</li>
+							<li class="langs__item">
+								<a title="Русский" href="#" class="langs__link"><span>ru</span><picture><source srcset="img/sidebar/ru.webp" type="image/webp"><img src="img/sidebar/ru.png" alt="Flag Russia"></picture></a>
+							</li>
+							<li class="langs__item">
+								<a title="Українська" href="#" class="langs__link"><span>ua</span><picture><source srcset="img/sidebar/ua.webp" type="image/webp"><img src="img/sidebar/ua.png" alt="Flag Ukraine"></picture></a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__copy">
+						<p>© 2023 Copyright Company name</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- End wrapper -->
+
+	<script src="js/app.min.js?_v=20230506180353"></script>
+</body>
+
+</html>

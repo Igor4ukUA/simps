@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Registration</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230506180353">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper wrapper-login">
+		<header class="header-main header">
+			<div class="header-main__container header__container">
+				<a href="index.html" class="header-main__logo header__logo"><img src="img/header/logo.svg" alt="Logo"></a>
+				<div class="header-main__menu menu-main">
+					<nav class="menu-main__body">
+						<ul class="menu-main__list">
+							<li class="menu-main__item">
+								<a href="index.html" class="menu-main__link menu-main__link_active">Home</a>
+							</li>
+							<li class="menu-main__item">
+								<a href="gallery.html" class="menu-main__link">Gallery</a>
+							</li>
+							<li class="menu-main__item">
+								<a href="blogs.html" class="menu-main__link">Blog</a>
+							</li>
+							<li class="menu-main__item">
+								<a href="story.html" class="menu-main__link">Our Story</a>
+							</li>
+							<li class="menu-main__item">
+								<a href="contact.html" class="menu-main__link">Contact Us</a>
+							</li>
+							<li class="menu-main__item">
+								<a href="custom-pay.html" class="menu-main__link">Payment</a>
+							</li>
+						</ul>
+						<span></span>
+					</nav>
+				</div>
+				<div class="header-main__actions">
+					<a data-da=".menu-main__body, 600" href="login.html" class="header-main__button button button_white">
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1616 3.33837C7.7209 3.33837 5.74236 5.31691 5.74236 7.75756C5.74236 10.1982 7.7209 12.1768 10.1616 12.1768C12.6022 12.1768 14.5807 10.1982 14.5807 7.75756C14.5807 5.31691 12.6022 3.33837 10.1616 3.33837ZM4.47974 7.75756C4.47974 4.61958 7.02357 2.07574 10.1616 2.07574C13.2995 2.07574 15.8434 4.61958 15.8434 7.75756C15.8434 10.8955 13.2995 13.4394 10.1616 13.4394C7.02357 13.4394 4.47974 10.8955 4.47974 7.75756Z" fill="#00AFF0" />
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1616 13.4388C8.72081 13.4388 7.30543 13.8181 6.05772 14.5385C4.81001 15.2589 3.77394 16.2952 3.05367 17.543C2.87936 17.8449 2.49327 17.9484 2.1913 17.7741C1.88933 17.5998 1.78584 17.2137 1.96014 16.9118C2.79123 15.472 3.98669 14.2763 5.42635 13.4451C6.86602 12.6138 8.49915 12.1761 10.1616 12.1761C11.824 12.1761 13.4571 12.6138 14.8968 13.4451C16.3365 14.2763 17.5319 15.472 18.363 16.9118C18.5373 17.2137 18.4338 17.5998 18.1319 17.7741C17.8299 17.9484 17.4438 17.8449 17.2695 17.543C16.5492 16.2952 15.5132 15.2589 14.2654 14.5385C13.0177 13.8181 11.6024 13.4388 10.1616 13.4388Z" fill="#00AFF0" />
+						</svg>
+						<span>Login</span>
+					</a>
+					<a data-da=".menu-main__body, 600" href="purchase.html" class="header-main__button header-main__button_gs button">Get Started Now</a>
+					<button type="button" class="header-main__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="registration login">
+				<div class="login__images">
+					<picture><source srcset="img/login/logo-login.webp" type="image/webp"><img src="img/login/logo-login.png" alt="Logo"></picture>
+				</div>
+				<div class="registration__body login__body">
+					<div class="registration__content login__content">
+						<h1 class="registration__title login__title">Fill out the form</h1>
+						<div class="registration__text login__text">
+							<div class="registration__question login__question">
+								<p>Already have an Account?</p>
+							</div>
+							<a href="login.html" class="registration__link login__link">Sign In</a>
+						</div>
+						<form action="#" class="registration__form form-registration">
+							<div class="form-registration__items">
+								<div class="form-registration__item">
+									<label for="fullName" class="form-registration__label">Full Name</label>
+									<input type="text" name="fullName" id="fullName" data-required placeholder=" " class="form-registration__input">
+								</div>
+								<div class="form-registration__item">
+									<label for="email" class="form-registration__label">Email Address</label>
+									<input type="text" name="email" id="email" data-validate data-error="Wrong E-mail" data-required="email" placeholder=" " class="form-registration__input">
+								</div>
+								<div class="form-registration__item">
+									<label for="password" class="form-registration__label">Password</label>
+									<input data-required name="password" id="password" type="password" class="form-registration__input" placeholder=" ">
+								</div>
+								<div class="form-registration__item">
+									<label for="social" class="form-registration__label">TikTok or Instagram</label>
+									<input type="text" name="social" id="social" placeholder=" " class="form-registration__input">
+								</div>
+								<div class="form-registration__item">
+									<label for="language" class="form-registration__label">Preferred language</label>
+									<select name="form[language]" data-class-modif="language">
+										<option value="en" selected>English</option>
+										<option value="es">Español</option>
+										<option value="kor">Korean</option>
+										<option value="fr">Français</option>
+										<option value="pt">Portugese</option>
+										<option value="br">Portugese for Brazilian</option>
+										<option value="ru">Русский</option>
+										<option value="ua">Українська</option>
+									</select>
+								</div>
+								<div class="form-registration__item form-registration__item_message">
+									<label for="messageRegistration" class="form-registration__label">Your Message</label>
+									<textarea name="messageRegistration" id="messageRegistration" class="form-registration__input form-registration__input_message" placeholder=" "></textarea>
+								</div>
+								<button type="submit" class="form-registration__button form-login__button">Submit Form</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+	</div>
+	<!-- End wrapper -->
+
+	<script src="js/app.min.js?_v=20230506180353"></script>
+</body>
+
+</html>
+
+</html>
